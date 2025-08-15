@@ -140,6 +140,7 @@ form {
 
 label {
   margin-bottom: 4px;
+  text-transform: uppercase;
 }
 
 input {
