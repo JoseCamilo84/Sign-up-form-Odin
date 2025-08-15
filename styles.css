@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Norse-Bold';
+  src: url(fonts/Norse-Bold.otf) format('opentype');
+}
+
+body, html {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  height: 100%;
+  background-color: rgb(24, 24, 24);
+}
+
+h1 {
+  color: white;
+  font-family: 'Norse-Bold';
+}
+
+.container {
+  display: flex;
+  width: 68%;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 1px solid salmon; */
+}
+
+.section-title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex: 40%;
+  background-image: url("assets/halie-west-25xggax4bSA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.section-form {
+  flex: 60%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.background-title {
+  position: absolute;
+  top: 150px;
+  background-color: rgba(0, 0, 0, 0.441);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 100%;
+}
+
+.background-title img {
+  height: 100px;
+}
+
+.background-title h1 {
+  font-size: 70px;
+}
+
+.footer {
+  color: rgba(255, 255, 255, 0.723);
+  font-size: 10px;
+  letter-spacing: 0.4px;
+  text-align: center;
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.723);
+}
+
+/*
+.elemento {
+  flex: 1;  Cada elemento ocupa el mismo espacio 
+}
+*/
+
+.section-top {
+  background-color: #fbfdff;
+  padding: 120px 40px 30px;
+  font-weight: 600;
+  font-size: large;
+}
+
+.section-mid {
+  box-shadow: 5px 3px 6px 0px rgba(0, 0, 0, 0.15);
+  padding-bottom: 30px;
+  padding-left: 40px;
+  font-size: x-small;
+}
+
+.section-mid h2 {
+  font-size: large;
+}
+
+.section-footer {
+  padding-top: 30px;
+  padding-left: 40px;
+}
+
+.section-footer button {
+  border: none;
+  background-color: #596D48;
+  color: white;
+  padding: 12px 40px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.section-footer p {
+  margin-top: 20px;
+  font-size: small;
+  font-weight: 600;
+}
+
+p span {
+  color: #596D48;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+label {
+  margin-bottom: 4px;
+}
+
+input {
+  outline: none;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="password"]:invalid {
+  border-color:red;
+}
+
+input:focus {
+  border-color: cornflowerblue;
+  box-shadow: 0 0 4px rgba(89, 109, 72, 0.5);
+}
