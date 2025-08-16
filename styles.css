@@ -90,32 +90,39 @@ h1 {
   font-size: large;
 }
 
-.section-mid {
+.form-input {
   box-shadow: 5px 3px 6px 0px rgba(0, 0, 0, 0.15);
   padding-bottom: 30px;
   padding-left: 40px;
   font-size: x-small;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.section-mid h2 {
+h2 {
+  display: block;
+  width: 100%;
   font-size: large;
+  margin-bottom: 0px;
 }
 
-.section-footer {
+.form-row-btn {
   padding-top: 30px;
   padding-left: 40px;
 }
 
-.section-footer button {
+.form-row-btn button {
   border: none;
   background-color: #596D48;
   color: white;
   padding: 12px 40px;
   border-radius: 5px;
   font-weight: 600;
+  cursor: pointer;
 }
 
-.section-footer p {
+.form-row-btn p {
   margin-top: 20px;
   font-size: small;
   font-weight: 600;
@@ -132,12 +139,6 @@ p span {
   font-weight: 600;
 }
 
-form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
 label {
   margin-bottom: 4px;
   text-transform: uppercase;
@@ -145,9 +146,13 @@ label {
 
 input {
   outline: none;
-  padding: 8px;
+  padding: 4px;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+input:valid {
+  border-color: #596D48;
 }
 
 input[type="password"]:invalid {
